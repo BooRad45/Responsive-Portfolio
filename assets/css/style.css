@@ -275,7 +275,7 @@ input[type=submit] {
 
 /* Begin media queries */
 
-/* index.html queries */
+/* index.html queries 640px */
 @media screen and (max-width: 640px) {
   #logo {
     width: 100%;
@@ -312,11 +312,49 @@ input[type=submit] {
     margin-left: 5%;
   }
 
-  /* portfolio.html queries */
+  /* portfolio.html queries 640px */
   .work  {
     width: 95%;
     margin-right: 2.5%;
     margin-left: 2.5%;
   }
+} /* <------  end 640 px media queries */
+
+/* Begin 768px media queries */
+
+/* index.html 768px queries*/
+
+@media screen and (max-width: 768px) and (min-width: 640px) {
+    #logo {
+      margin-left: 2.5%;
+      width: 40%;
+    }
+    nav {
+      padding-right: 15px;
+      padding-left: 5px;
+    }
+    .main-section {
+      max-width: none;
+      width: 95%;
+      margin-right: 2.5%;
+      margin-left: 2.5%;
+      margin-bottom: 20px;
+    }
+    .auth-image {
+      width: 50%;
+      height: 250px;
+    }
+    p {
+      font-size: 80%;
+    }
+    .sidebar {
+    float: left;
+    width: 95%;
+    max-width: none;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    }
+}
+
 
 
