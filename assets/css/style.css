@@ -275,6 +275,7 @@ input[type=submit] {
 
 /* Begin media queries */
 
+/* index.html queries */
 @media screen and (max-width: 640px) {
   #logo {
     width: 100%;
@@ -309,6 +310,13 @@ input[type=submit] {
     max-width: none;
     margin-right: 5%;
     margin-left: 5%;
+  }
+
+  /* portfolio.html queries */
+  .work  {
+    width: 95%;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
   }
 
 
