@@ -27,6 +27,24 @@ footer,
 .push {
   height: 105px;
 }
+/* start hover styling */
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+/* end hover styling */
+
 /* general */
 
 .container {
