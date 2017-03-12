@@ -9,7 +9,24 @@ body {
 * {
   box-sizing: border-box;
 }
+/* http://ryanfait.com/html5-sticky-footer/ */
 
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
 /* general */
 
 .container {
