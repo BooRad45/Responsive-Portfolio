@@ -354,7 +354,7 @@ input[type=submit] {
     margin-right: 2.5%;
     margin-left: 2.5%;
     }  
-}   /* <-------End of media queries at 768px down to 640 px*/
+}   /* <------- End of media queries at 768px down to 640 px*/
 
 @media screen and (max-width: 980px) and (min-width: 768px) {
    #logo {
@@ -370,6 +370,10 @@ input[type=submit] {
     }
     .sidebar {
       margin-right: 7%;
+    }
+    /* portfolio.html media queries at 980px */
+    .work  {
+      width: 100%;
     }
 }
 
