@@ -353,8 +353,26 @@ input[type=submit] {
     max-width: none;
     margin-right: 2.5%;
     margin-left: 2.5%;
+    }  
+}   /* <-------End of media queries at 768px down to 640 px*/
+
+@media screen and (max-width: 980px) and (min-width: 768px) {
+   #logo {
+    margin-left: 10%;
+    width: 270px;
+   }
+   nav {
+    margin-right: 70px;
+   }
+    .main-section {
+      width: 50%;
+      margin-left: 10%;
+    }
+    .sidebar {
+      margin-right: 7%;
     }
 }
+
 
 
 
