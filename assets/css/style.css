@@ -1,242 +1,239 @@
 body {
-	background: url('..assets/images/concrete_seamless.png');
-	background-color: #fff;
-	font-family: 'Roboto Slab', serif;
-	margin: 0px;
-	background-color: beige;	
-}
-section {
-	padding: 20px;
-
-}
-header {
-	background-color: #fff;
-	border-color: #ccc;
-	margin-top: -5px;
-}
-h1 {
-	left: 32px;
-	color: #fff;
-	border-color: #fff;
-	background-color: #4aaaa5;
-	width: 15%;
-	margin-left: 160px;
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	padding-left: 5px;
-	font-size: 28px;
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	font-weight: 700;
-}
-h2 {
-	
-	font-size: 30px;
-	font-family: 'Georgia', Times, 'Times New Roman', serif;
-	color: #4aaaa5;
-	background-color: #fff;
-	font-weight: 700;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/concrete_seamless.png");
 }
 
-a {
-	color: #4aaaa5;
+* {
+  box-sizing: border-box;
 }
+
+/* general */
+
 .container {
-	width: 1500px;
-	margin-left: 160px;
-	min-height: calc(100vh - 70px); /*sticky footer with calc function*/
-	margin-bottom: -180px;
-	margin-top: -5px;
-}
-.connect {
-	background-color: #fff;
-	padding-bottom: 30px;
-	padding-top: 20px;
-	border-color: #ddd;
-	width: 270px;
-	margin-left: 40px;
-	padding-left: 20px;
-	padding-right: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  clear: both;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-}
-ul .social-icon-list {
-	list-style-type: none;
-    margin: 0px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #fff;
-    padding-left: 10px;
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
 }
 
-li {
-    float: left;
-    background-color: #fff;
-
+p:last-child {
+  margin-bottom: 0;
 }
 
-li a {
-    display: block;
-    padding: 6px;
-    text-decoration: none;
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
 }
 
-li a:hover {
-    background-color: #ddd;
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
 }
 
-#main-bio,
-#contact-info,
-#bio-image {
-	float: left;
-
-}
-#bio-image {
-	float:left;
-	width: 200px;
-	margin-right: 33px;
-}
-#main-bio {
-	width: 960px;
-	padding-left: 13.3333px;
-	padding-right: 13.3333px;
-	padding-bottom: 150px;
-	background-color: #fff;
-	padding-top: 15px;
-	margin-top: 40px;
-	margin-bottom: 30px;
-	border-color: #ddd;
-	font-size: 23px;
-}
-#navigation {
-	position: absolute;
-    top: 15px;
-    right: 210px;
-    
-}
-#contact-info {
-	text-align: center;
-	padding-top: 0px;
-	margin-top: 40px;
-	
-}
-a.maxPicture{
-	width: 65px;
-	height: 65px;
+h2,
+h3 {
+  font-size: 22px;
 }
 
-.social-icons {
-     width: 100%;
-     height: 100%;		
+/* header */
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
 }
-.social-icon-list {
-	margin: 5px;
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
 }
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+/* footer */
+
 footer {
-	border-style: solid 15px;
-    border-top: thick double #4aaaa5;
-	border-color: #4aaaa5;
-	clear: both;
-	background-color: #666;
-	padding-top: 55px;
-	text-align: center;
-	width: 100%;
-	height: 100px;
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
 }
 
-/* Contact form */
+/* sidebar */
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-    font-size: 14px;
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #4aaaa5;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-    background-color: grey;
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
 }
 
-/* Add a background color and some padding around the form */
-.container-form {
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 20px;
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #777;
+.social:last-child {
+  margin-right: 0;
 }
-/* Image Gallery on Portfolio Page*/
-.gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+
+/* main */
+
+#main-container {
+  padding-top: 130px;
 }
-.item {
-  flex: 1 0 15em;
-  margin: 1em;
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
-img {
+
+/* portfolio page */
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 0.8;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+.auth-image {
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+/* contact page */
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
   display: block;
   width: 100%;
 }
 
-
-/** All visual fluff **/
-html {
-  background: #fff;
-  height: 100%;
-}
-.gallery {
-  background: rgba(255,255,255,0.3);
-  margin: 1em 0;
-  padding: 1em;
-}
-.item {
-  min-width: 8em;
-  min-height: 8em;
-}
-#hangman {
-    position: relative;
-    background-image: url(..assets/images/PortfolioImages/Hangman.jpeg);
-    
-}
-#pic-text, 
-#pic-text2, 
-#pic-text3, 
-#pic-text4, 
-#pic-text5 {
-	margin-top: -50px; 
-	text-align: center; 
-	color: #fff;
-	z-index: 1;
-	background-color: #4aaaa5;
-	text-decoration: none;
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
 }
 
+textarea {
+  height: 200px;
+}
 
-
-
-
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
