@@ -274,8 +274,15 @@ input[type=submit] {
 }
 
 /* Begin media queries */
+@media screen and (max-width: 570px) {
+  nav a {
+    padding-left: 40px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+} /* <-- End media queries at 570px -->
 
-/* index.html queries 640px */
+ /* index.html queries 640px */
 @media screen and (max-width: 640px) {
   #logo {
     width: 100%;
